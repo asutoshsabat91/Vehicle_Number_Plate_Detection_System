@@ -1,0 +1,196 @@
+/* Dark theme stylesheet for ANPR GUI */
+
+/* Main window */
+QMainWindow {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Widgets */
+QWidget {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+/* Labels */
+QLabel {
+    color: #ffffff;
+    padding: 2px;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #0d47a1;
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    min-width: 80px;
+}
+
+QPushButton:hover {
+    background-color: #1565c0;
+}
+
+QPushButton:pressed {
+    background-color: #0a3d91;
+}
+
+QPushButton:disabled {
+    background-color: #424242;
+    color: #9e9e9e;
+}
+
+/* Combo boxes */
+QComboBox {
+    background-color: #424242;
+    color: #ffffff;
+    border: 1px solid #616161;
+    border-radius: 4px;
+    padding: 4px 8px;
+    min-width: 100px;
+}
+
+QComboBox:hover {
+    border-color: #757575;
+}
+
+QComboBox:focus {
+    border-color: #0d47a1;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 20px;
+}
+
+QComboBox::down-arrow {
+    image: url(resources/down_arrow.png);
+    width: 12px;
+    height: 12px;
+}
+
+/* Spinboxes */
+QSpinBox {
+    background-color: #424242;
+    color: #ffffff;
+    border: 1px solid #616161;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QSpinBox:hover {
+    border-color: #757575;
+}
+
+QSpinBox:focus {
+    border-color: #0d47a1;
+}
+
+/* Checkboxes */
+QCheckBox {
+    color: #ffffff;
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #616161;
+    border-radius: 3px;
+    background-color: #424242;
+}
+
+QCheckBox::indicator:hover {
+    border-color: #757575;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #0d47a1;
+    border-color: #0d47a1;
+    image: url(resources/checkmark.png);
+}
+
+/* Progress bar */
+QProgressBar {
+    background-color: #424242;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    color: #ffffff;
+}
+
+QProgressBar::chunk {
+    background-color: #0d47a1;
+    border-radius: 4px;
+}
+
+/* Group boxes */
+QGroupBox {
+    border: 1px solid #616161;
+    border-radius: 4px;
+    margin-top: 12px;
+    padding-top: 12px;
+}
+
+QGroupBox::title {
+    color: #ffffff;
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 8px;
+    padding: 0 4px;
+}
+
+/* Scroll bars */
+QScrollBar:vertical {
+    background-color: #424242;
+    width: 12px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #616161;
+    min-height: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #757575;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+QScrollBar:horizontal {
+    background-color: #424242;
+    height: 12px;
+    margin: 0;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #616161;
+    min-width: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #757575;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0;
+}
+
+/* Status bar */
+QStatusBar {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+QStatusBar::item {
+    border: none;
+}
